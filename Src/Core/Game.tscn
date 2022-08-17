@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Src/Screens/MenuScreen/MenuScreen.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Src/Core/Game.cs" type="Script" id=2]
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="TransitionTween" type="Tween" parent="."]
+
+[node name="CurrentScreen" parent="." instance=ExtResource( 1 )]
